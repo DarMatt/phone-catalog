@@ -6,7 +6,7 @@ export const Details = ({ id, reset }) => {
   const[index, setIndex] = useState(0)
 
   useEffect(() => {
-    fetch(`/api/phones/${id}.json`)
+    fetch(`https://darmatt.github.io/phone-catalog/api/phones/${id}.json`)
       .then(response => response.json())
       .then(setDetails)
   }, [id]);

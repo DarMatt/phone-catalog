@@ -18,7 +18,7 @@ function App() {
   }, [phonesList, value])
 
   useEffect(() => {
-    fetch('/api/phones.json')
+    fetch('https://darmatt.github.io/phone-catalog/api/phones.json')
       .then(response => response.json())
       .then(result => {
         setPhonesList(result)
